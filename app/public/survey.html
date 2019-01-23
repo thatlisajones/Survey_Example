@@ -21,13 +21,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
-  <title>FakeFriend Finder</title>
+  <title>Fakefeeling Finder</title>
 </head>
 
 <body>
     <div class="container">   
         <div class="jumbotron jumbotron-fluid text-center">
-            <span class="jumbotronStyle"><h1 class="display-4"><span class="far fa-kiss-wink-heart"></span> FakeFriend Survey</h1></span>
+            <span class="jumbotronStyle"><h1 class="display-4"><span class="far fa-kiss-wink-heart"></span> Fakefeeling Survey</h1></span>
             <div class="text-center mx-auto py-3">
                     <a href="home.html">
                         <button type="button" class="btn btn-lg btn-primary">Home</button>
@@ -152,19 +152,19 @@
     <div class="row">
         <div class="col-md-12 py-3 ml-2">
         <span>
-            <a href="/api/friends">API Friends List</a> |
-            <a href="https://github.com/thatlisajones/FriendFinder" target="_blank">GitHub Repository</a>
+            <a href="/api/feelings">API feelings List</a> |
+            <a href="https://github.com/thatlisajones/feelingFinder" target="_blank">GitHub Repository</a>
         </span>
         </div>
     </div>
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary"  id="friendBtn" data-toggle="modal" data-target="#friendsModal">
+<button type="button" class="btn btn-primary"  id="feelingBtn" data-toggle="modal" data-target="#feelingsModal">
     View Match
 </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="friendsModal" role="dialog">
+  <div class="modal fade" id="feelingsModal" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -173,10 +173,10 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="friendsModalBody">
-          <!-- new friend info here -->
-          <h3 class="newFriendName"></h3>
-          <img class="newFriendPhoto" src="https://static01.nyt.com/images/2018/09/17/style/00CelebNetWorth-1/00CelebNetWorth-1-articleLarge.gif?quality=90&auto=webp"/>
+        <div class="modal-body" id="feelingsModalBody">
+          <!-- new feeling info here -->
+          <h3 class="newfeelingName"></h3>
+          <img class="newfeelingPhoto" src="https://static01.nyt.com/images/2018/09/17/style/00CelebNetWorth-1/00CelebNetWorth-1-articleLarge.gif?quality=90&auto=webp"/>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -194,16 +194,16 @@
     <script type="text/javascript">
     $(document).ready(function() {
 
-        $("#friendBtn").on("click", function(){
-            $("#friendsModal").modal("toggle");
-            console.log("in friend button click");
+        $("#feelingBtn").on("click", function(){
+            $("#feelingsModal").modal("toggle");
+            console.log("in feeling button click");
             
         })
 
-        function runFriendQuery() {
-            $.ajax({url:"/api/friends", method: "GET"})
-            .then(function(friendsData) {
-                console.log(friendsData);
+        function runfeelingQuery() {
+            $.ajax({url:"/api/feelings", method: "GET"})
+            .then(function(feelingsData) {
+                console.log(feelingsData);
             })
         };
         $("#submitBtn").on("click", function (event) {
@@ -216,24 +216,24 @@
           var values = $('input[type=radio]:checked').map(function () { return $(this).val(); }).get();
             
             //put the results into a variable
-          var newFriend = {
+          var newfeeling = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
             questions: values
           };
           console.log("values", values);
-          console.log("new Friend",newFriend);
+          console.log("new feeling",newfeeling);
           var currentURL = window.location.origin;
 
           
     
-          $.post(currentURL + "/api/friends", newFriend)
+          $.post(currentURL + "/api/feelings", newfeeling)
             .then(function (data) {
-                $(".newFriendName").text(data.name);
-                $(".newFriendPhoto").attr("src", data.photo);
-                $("#friendsModal").modal("toggle");
+                $(".newfeelingName").text(data.name);
+                $(".newfeelingPhoto").attr("src", data.photo);
+                $("#feelingsModal").modal("toggle");
               console.log("survey.html", data);
-            //   alert("Your survey information has been added to FriendFinder!")
+            //   alert("Your survey information has been added to feelingFinder!")
                 //add in if else to make sure all fields are completed
             });
 
