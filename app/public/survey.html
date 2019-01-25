@@ -2,273 +2,201 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
-        <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
-  <title>emoji diary</title>
+    <title>emoji diary</title>
 </head>
 
 <body>
-    <div class="container">   
+    <div class="container">
         <div class="jumbotron jumbotron-fluid text-center">
-            <span class="jumbotronStyle"><h1 class="display-4"><span class="far fa-kiss-wink-heart"></span> TEST emoji survey page 2</h1></span>
+            <span class="jumbotronStyle">
+                <h1 class="display-4">
+            </span>Check all emoji that apply to you right now:</h1>
+            </span>
             <div class="text-center mx-auto py-3">
-                    <a href="home.html">
-                        <button type="button" class="btn btn-lg btn-primary">Home</button>
-                    </a>
-                </div>
-        </div>
-    <div class="survey table" style="font-size: 80px">
-        <table class="table table-borderless">
-            <tbody>
-              <tr>
-                <td scope="col">&#x1F415</td>
-                <td scope="col">&#x1F436</td>
-                <td scope="col">&#x1F48E</td>
-                <td scope="col">&#x1F3C6</td>
-              </tr>
-              <tr>
-                <td scope="col">&#x1F451</td>
-                <td scope="col">&#x1F381</td>
-                <td scope="col">&#x1F340</td>
-                <td scope="col">&#x1F9D0</td>
-              </tr>
-              <tr>
-                <td scope="col">&#x1F60D</td>
-                <td scope="col">&#x1F607</td>
-                <td scope="col">&#x1F947</td>
-                <td scope="col">&#x1F4AF</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-<!-- 
-        <div class="row">
-            <div class="col-md-12">
-                Survey Panel
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"></h3>
-                    </div>
-                    <div class="panel-body">
-                        <form action="/survey" method="POST">
-                            <h3>About You</h3>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-default">Your Name</span>
-                                </div>
-                                <input type="text" class="form-control" id="name" aria-label="input" aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-default">Link to Your Photo</span>
-                                </div>
-                                <input type="link" class="form-control" id="photo" aria-label="input" aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <hr>
-                            <h3>Where do you stand?</h3>
-                            <div class="form-group">
-                                <h5>The Earth is flat.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2" for="1"><input type="radio" class="first" value="1"> 1 - So wrong! </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="2"><input type="radio" class="first" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="3"><input type="radio" class="first" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="4"><input type="radio" class="first" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="5"><input type="radio" class="first" value="5"> 5 - So true! </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>U.S. government agencies have participated in mind-control research and experiments using unsuspecting people as test subjects.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="second" value="1"> 1 - Such a lie. </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="second" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="second" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="second" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="second" value="5"> 5 - Sadly, too true. </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>It's mean to make fun of people who believe in UFOs and extraterrestrials -- because who can know for sure?</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="third" value="1"> 1 - I scoff and laugh. </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="third" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="third" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="third" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="third" value="5"> 5 - I'm a believer, too. </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>Coordinated disinformation campaigns have NO effect on the outcome of elections.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fourth" value="1"> 1 - No effect whatsoever. </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fourth" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fourth" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fourth" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fourth" value="5"> 5 - Truth! </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>The sinking of the Titanic was a deliberate act.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fifth" value="1"> 1 - Nonsense. </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fifth" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fifth" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fifth" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="fifth" value="5"> 5 - Truth! </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>Paul McCartney died in 1966 and was replaced by a look-alike.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="sixth" value="1"> 1 - Total nonsense. </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="sixth" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="sixth" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="sixth" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="sixth" value="5"> 5 - Truth! </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>Five U.S. presidents lied to the American public to justify the Vietnam War.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="seventh" value="1"> 1 - Propaganda! </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="seventh" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="seventh" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="seventh" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="seventh" value="5"> 5 - Totally true. </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>Donald Trump is the only U.S. president NOT controlled by the Illuminati.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="eighth" value="1"> 1 - Crazy nonsense. </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="eighth" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="eighth" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="eighth" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="eighth" value="5"> 5 - Truth! </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>Magic and miracles happen every day regardless of my beliefs.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="ninth" value="1"> 1 - False. </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="ninth" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="ninth" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="ninth" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2"><input type="radio" class="ninth" value="5"> 5 - Yes! </label>
-                            </div>
-                            <div class="form-group">
-                                <h5>Discrepancies between my memories and the real world are proof that I have experienced an alternate dimension of reality.</h5>
-                                <label class="radio-inline mb-2 mr-sm-2" for="1"><input type="radio" class="tenth" value="1"> 1 - No. Just no. </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="2"><input type="radio" class="tenth" value="2"> 2 </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="3"><input type="radio" class="tenth" value="3"> 3 </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="4"><input type="radio" class="tenth" value="4"> 4 </label>
-                                <label class="radio-inline mb-2 mr-sm-2" for="5"><input type="radio" class="tenth" value="5"> 5 - Yes! Yes! </label>
-                            </div>
-                
-                
-                            <button class="btn btn-primary" type="submit" id="submitBtn">Submit Completed Survey</button>                
-                        </form> -->
-                    </div>
-                </div>
             </div>
         </div>
-    </div> 
+        <div class="survey table" style="font-size: 80px">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1" style="font-size: 80px">&#x1F496</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2" style="font-size: 80px">&#x1F436</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1" style="font-size: 80px">&#x1F48E</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2" style="font-size: 80px">&#x1F3C6</label>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1" style="font-size: 80px">&#x1F451</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2" style="font-size: 80px">&#x1F381</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1" style="font-size: 80px">&#x1F340</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2" style="font-size: 80px">&#x1F9D0</label>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1" style="font-size: 80px">&#x1F60D</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2" style="font-size: 80px">&#x1F607</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1" style="font-size: 80px">&#x1F947</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2" style="font-size: 80px">&#x1F4AF</label>
+                        </div>
+                    </tr>
+
+                    </td>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+   
+    </div>
 
     <div class="row">
         <div class="col-md-12 py-3 ml-2">
-        <span>
-            <a href="/api/feelings">API feelings List</a> |
-            <a href="https://github.com/thatlisajones/feelingFinder" target="_blank">GitHub Repository</a>
-        </span>
+            <span>
+                <a href="readme">About This App</a> |
+                <a href="https://github.com/our repo" target="_blank">GitHub Repository</a>
+            </span>
         </div>
     </div>
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary"  id="feelingBtn" data-toggle="modal" data-target="#feelingsModal">
-    View Match
-</button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="feelingsModal" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Here's your best match:</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" id="feelingsModalBody">
-          <!-- new feeling info here -->
-          <h3 class="newfeelingName"></h3>
-          <img class="newfeelingPhoto" src="https://static01.nyt.com/images/2018/09/17/style/00CelebNetWorth-1/00CelebNetWorth-1-articleLarge.gif?quality=90&auto=webp"/>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a href="/home"><button type="button" class="btn btn-primary">Home</button></a> 
-        </div>
-      </div>
-    </div>
-  </div>
+    <button type="button" class="btn btn-primary" id="feelingBtn" data-toggle="modal" data-target="#feelingsModal">
+        View Match
+    </button>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Modal -->
+    <div class="modal fade" id="feelingsModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Here's your best match:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="feelingsModalBody">
+                    <!-- new feeling info here -->
+                    <h3 class="newfeelingName"></h3>
+                    <img class="newfeelingPhoto" src="https://static01.nyt.com/images/2018/09/17/style/00CelebNetWorth-1/00CelebNetWorth-1-articleLarge.gif?quality=90&auto=webp" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="/home"><button type="button" class="btn btn-primary">Home</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
 
 
     <script type="text/javascript">
-    $(document).ready(function() {
+        $(document).ready(function () {
 
-        $("#feelingBtn").on("click", function(){
-            $("#feelingsModal").modal("toggle");
-            console.log("in feeling button click");
-            
-        })
-
-        function runfeelingQuery() {
-            $.ajax({url:"/api/feelings", method: "GET"})
-            .then(function(feelingsData) {
-                console.log(feelingsData);
-            })
-        };
-        $("#submitBtn").on("click", function (event) {
-          event.preventDefault();
-          //var value = $('input[type=radio]:checked').val();
-            //grab the values of the radio buttons that are checked
-            //use .map to translate the values into an array -- inputs are a function and an object
-            //return the values using "this"
-            //.get grabs the individual values defined in .map and puts them into the array
-          var values = $('input[type=radio]:checked').map(function () { return $(this).val(); }).get();
-            
-            //put the results into a variable
-          var newfeeling = {
-            name: $("#name").val().trim(),
-            photo: $("#photo").val().trim(),
-            questions: values
-          };
-          console.log("values", values);
-          console.log("new feeling",newfeeling);
-          var currentURL = window.location.origin;
-
-          
-    
-          $.post(currentURL + "/api/feelings", newfeeling)
-            .then(function (data) {
-                $(".newfeelingName").text(data.name);
-                $(".newfeelingPhoto").attr("src", data.photo);
+            $("#feelingBtn").on("click", function () {
                 $("#feelingsModal").modal("toggle");
-              console.log("survey.html", data);
-            //   alert("Your survey information has been added to feelingFinder!")
-                //add in if else to make sure all fields are completed
-            });
+                console.log("in feeling button click");
 
-       
-    });
-    });
-   
-      </script>
+            })
+
+            function runfeelingQuery() {
+                $.ajax({ url: "/api/feelings", method: "GET" })
+                    .then(function (feelingsData) {
+                        console.log(feelingsData);
+                    })
+            };
+            $("#submitBtn").on("click", function (event) {
+                event.preventDefault();
+                //var value = $('input[type=radio]:checked').val();
+                //grab the values of the radio buttons that are checked
+                //use .map to translate the values into an array -- inputs are a function and an object
+                //return the values using "this"
+                //.get grabs the individual values defined in .map and puts them into the array
+                var values = $('input[type=radio]:checked').map(function () { return $(this).val(); }).get();
+
+                //put the results into a variable
+                var newfeeling = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    questions: values
+                };
+                console.log("values", values);
+                console.log("new feeling", newfeeling);
+                var currentURL = window.location.origin;
+
+
+
+                $.post(currentURL + "/api/feelings", newfeeling)
+                    .then(function (data) {
+                        $(".newfeelingName").text(data.name);
+                        $(".newfeelingPhoto").attr("src", data.photo);
+                        $("#feelingsModal").modal("toggle");
+                        console.log("survey.html", data);
+                        //   alert("Your survey information has been added to feelingFinder!")
+                        //add in if else to make sure all fields are completed
+                    });
+
+
+            });
+        });
+
+    </script>
 
 </body>
 
 </html>
-
